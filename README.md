@@ -18,6 +18,7 @@ Este projeto foi desenvolvido com as seguintes tecnologias:
   <div style="display: flex;   flex-direction: column;
   align-items: center;">
   <h1 align="center" style="display: flex; flex-direction:row;">
+      <img   style="margin: 0 10px;" alt="Projeto Nike" src="Projeto Nike (online-video-cutter.com).gif" />
   </h1>
   
 ---
