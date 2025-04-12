@@ -7,7 +7,12 @@ body {
     height: 100vh;
     overflow: hidden;
     font-family: "Noto Sans", sans-serif;
-@@ -16,7 +16,7 @@
+}
+
+body::before {
+    content: '';
+    background: #202020;
+    width: 100%;
     height: 120%;
     position: absolute;
     top: 0;
@@ -15,7 +20,16 @@ body {
     transform: rotate(-70deg);
 }
 
-@@ -33,29 +33,29 @@
+body::after {
+    content: 'Nike';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: black;
+    font-size: 250px;
+    font-weight: bold;
+    transform: translate(-50%, -50%);
+    opacity: 0.5;
 }
 
 .logo {
@@ -45,7 +59,10 @@ p {
     color: black;
     cursor: pointer;
     transition: 0.5;
-@@ -66,7 +66,7 @@
+}
+
+.botao-carrinho:hover {
+    opacity: 0.7;
 }
 
 .imagem-tenis {
@@ -53,7 +70,14 @@ p {
     transform: rotate(-25deg);
     filter: drop-shadow(30px 45px 40px #161616);
     transition: 1s;
-@@ -81,7 +81,7 @@
+}
+
+.troca-efeito {
+    opacity: 0;
+    transform: rotate(-25deg) translateY(-30px)
+}
+
+.caixa-principal {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -61,7 +85,12 @@ p {
     z-index: 1;
     position: relative;
 }
-@@ -94,37 +94,37 @@
+
+.caixa-texto {
+    max-width: 500px;
+}
+
+.caixa-botoes {
     z-index: 2;
     position: relative;
     display: flex;
